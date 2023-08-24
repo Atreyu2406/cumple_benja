@@ -71,19 +71,5 @@
   }
 
   
-  h1 {
-    color: #FFFFFF; /* Color del texto */
-    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000; /* Sombra como borde */
-  }
 
-  h2 {
-    color: #FFFFFF; /* Color del texto */
-    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000; /* Sombra como borde */
-  }
-
-  p {
-    font-size: 1.3rem;
-    color: #FFFFFF; /* Color del texto */
-    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000; /* Sombra como borde */
-  }
   
