@@ -54,6 +54,36 @@
     font-size: 24px;
   } */
 
+ 
+
   body {
-    background-color: aquamarine;
+    background-image: url("/src/img/fondo_futbol.jpeg");
+    background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    width: 100%;
+    height: 100vh; /* Establecer la altura del contenedor (puede ser ajustada) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
   }
+
+  
+  h1 {
+    color: #FFFFFF; /* Color del texto */
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000; /* Sombra como borde */
+  }
+
+  h2 {
+    color: #FFFFFF; /* Color del texto */
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000; /* Sombra como borde */
+  }
+
+  p {
+    font-size: 1.3rem;
+    color: #FFFFFF; /* Color del texto */
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000; /* Sombra como borde */
+  }
+  
