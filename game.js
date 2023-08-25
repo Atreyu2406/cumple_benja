@@ -5,14 +5,49 @@ const preguntas = [
         respuesta: 2
     },
     {
-        pregunta: "¿Cuántos jugadores hay en un equipo de fútbol en el campo durante un partido?",
-        opciones: ["10", "11", "12"],
+        pregunta: "¿Cuántos jugadores hay en el campo durante un partido?",
+        opciones: ["22", "11", "8"],
+        respuesta: 1
+    },
+    {
+        pregunta: "¿Cuál es el nombre de la novia de Davoo Xeneize?",
+        opciones: ["Sofía", "Carolina", "Milena"],
+        respuesta: 3
+    },
+    {
+        pregunta: "¿Qué jugador fue el ganador del Balón de Oro 2022?",
+        opciones: ["Ronaldo", "Benzema", "Messi"],
         respuesta: 2
     },
     {
-        pregunta: "¿Qué jugador es conocido como 'La Pulga'?",
-        opciones: ["Lionel Messi", "Cristiano Ronaldo", "Neymar"],
+        pregunta: "¿Quién ganó el Mundial de 1934?",
+        opciones: ["Uruguay", "Argentina", "Italia"],
+        respuesta: 3
+    },
+    {
+        pregunta: "¿Qué equipo Argentino fue el que sacó más puntos en la Fase de Grupos de la actual Copa Libertadores'?",
+        opciones: ["River", "Racing", "Boca"],
+        respuesta: 2
+    },
+    {
+        pregunta: "¿Quién es el arquero titular del Barcelona?",
+        opciones: ["Ter Stegen", "Tagliamonte", "Buffon"],
         respuesta: 1
+    },
+    {
+        pregunta: "¿Cuál fue el resultado de los penales en la Final entre Inter Miami y Nashville'?",
+        opciones: ["5 a 3", "7 a 6", "10 a 9"],
+        respuesta: 3
+    },
+    {
+        pregunta: "¿Quién fue el campeón de la primera edición de la Kings Legue?",
+        opciones: ["Porcinos FC", "El Barrio", "Ultimate Móstoles"],
+        respuesta: 2
+    },
+    {
+        pregunta: "¿Cuál es el equipo del Fútbol Argentino que tiene más copas?",
+        opciones: ["Racing", "Boca", "River"],
+        respuesta: 2
     }
 ];
 
@@ -26,11 +61,11 @@ const tiempoElemento = document.getElementById('tiempo');
 
 let indicePregunta = 0;
 let puntuacion = 0;
-let tiempoRestante = 10;
+let tiempoRestante = 20;
 let temporizador;
 
 function mostrarPregunta() {
-    tiempoRestante = 10;
+    tiempoRestante = 20;
     tiempoElemento.textContent = `Tiempo restante: ${tiempoRestante} segundos`;
 
     // Mostrar los checkboxes y etiquetas
@@ -46,7 +81,7 @@ function mostrarPregunta() {
             clearInterval(temporizador);
             verificarRespuesta();
         }
-    }, 1000);
+    }, 2000);
 
     const preguntaActual = preguntas[indicePregunta];
     preguntaElemento.textContent = preguntaActual.pregunta;
