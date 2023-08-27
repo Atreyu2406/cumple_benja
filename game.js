@@ -123,7 +123,7 @@ function verificarRespuesta() {
     if (indicePregunta < preguntas.length) {
         mostrarPregunta();
     } else {
-        preguntaElemento.textContent = "Trivia completada. ¡Tu puntuación final es: " + puntuacion;
+        preguntaElemento.textContent = "Trivia completada. Tu puntuación final es: " + puntuacion;
         for (let i = 0; i < 3; i++) {
             opcionesElementos[i].style.display = "none";
             labelElementos[i].style.display = "none";
